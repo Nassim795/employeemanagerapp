@@ -78,7 +78,10 @@ export class AppComponent implements OnInit {
       if (employee.name.toLowerCase().indexOf(key.toLowerCase()) !== -1
       || employee.email.toLowerCase().indexOf(key.toLowerCase()) !== -1
       || employee.phone.toLowerCase().indexOf(key.toLowerCase()) !== -1
-      || employee.jobTitle.toLowerCase().indexOf(key.toLowerCase()) !== -1) {
+      || employee.jobTitle.toLowerCase().indexOf(key.toLowerCase()) !== -1
+      || employee.startDate.toLowerCase().indexOf(key.toLowerCase()) !== -1
+      || employee.employmentType.toLowerCase().indexOf(key.toLowerCase()) !== -1
+      ) {
         results.push(employee);
       }
     }
